@@ -63,6 +63,7 @@
     --active-color: var(--ocean);
 
     --transition: 250ms ease-in-out;
+    --max-width: 1440px;
 }
 
 body {
@@ -94,10 +95,45 @@ h3 {
     font: var(--h3-font);
     letter-spacing: var(--h3-ls);
 }
+
+section {
+    max-width: var(--max-width);
+}
 .brand-logo {
     font: var(--logo-font);
     color: var(--iris);
 
+}
+
+.link {
+    font: var(--link-font);
+    letter-spacing: var(--link-ls);
+    color: var(--navy);
+    transition: color var(--transition);
+
+    &:hover {
+        color: var(--hover-color);
+    }
+    &:active {
+        color: var(--active-color);
+        &::after {
+            content: '';
+            background: var(--active-color);
+            height: 4px;
+            width: 48px;
+        }
+    }
+}
+
+.button {
+    background: var(--iris);
+    color: var(--white);
+    font:  var(--btn-font);
+    letter-spacing: var(--btn-ls);
+
+    &:hover {
+        background: var(--hover-color);
+    }
 }
 
 .header {
@@ -115,3 +151,12 @@ h3 {
     min-height: 600px;
 }
 
+.portfolio {
+    display: grid;
+
+    .portfolio-list{
+        .portfolio-item{
+            border: 1px solid var(--cornflower);
+        }
+    }
+}
