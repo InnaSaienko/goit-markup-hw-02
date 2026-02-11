@@ -1,0 +1,117 @@
+:root {
+
+    /* ===== TYPOGRAPHY ===== */
+
+    /* Body */
+    --body-font: 400 16px/24px 'Roboto', sans-serif;
+    --body-ls: 0.02em;
+
+    /* Small text */
+    --small-font: 400 12px/14px 'Roboto', sans-serif;
+    --small-ls: 0.04em;
+
+    /* Body Medium */
+    --body-medium-font: 500 16px/24px 'Roboto', sans-serif;
+
+    /* Button Text */
+    --btn-font: 500 16px/24px 'Roboto', sans-serif;
+    --btn-ls: 0.04em;
+
+    /* Link Text */
+    --link-font: 400 12px/16px 'Roboto', sans-serif;
+    --link-ls: 0.04em;
+
+    /* Headers */
+    --h1-font: 700 56px/60px 'Roboto', sans-serif;
+    --h1-ls: 0.02em;
+
+    --h2-font: 700 36px/40px 'Roboto', sans-serif;
+    --h2-ls: 0.02em;
+
+    --h3-font: 500 20px/24px 'Roboto', sans-serif;
+    --h3-ls: 0.02em;
+
+    /* Logo */
+    --logo-font: 700 20px/24px 'Raleway', sans-serif;
+
+
+    /* ===== COLORS ===== */
+
+    --iris: #4D5AE5;          /* Primary brand / links / active */
+    --ocean: #404BBF;         /* Pressed / hover */
+
+    --navy: #2E2F42;          /* Headings / dark / shadows */
+    --navy-blue: #2E2F42;    /* Modal overlay */
+
+    --grey: #2E2F42;          /* Hero background */
+
+    --slate: #434455;         /* Body text */
+    --light-slate: #8E8F99;   /* Helper text */
+
+    --green: #31D0AA;         /* Success */
+
+    --cornflower: #E7E9FC;    /* Hairlines / accents */
+    --cloud: #F4F4FD;         /* Light backgrounds */
+
+    --white: #FFFFFF;         /* Cards / header */
+    --dairy: #FCFCFC;         /* Modal bg */
+
+
+    /* ===== STATES ===== */
+
+    --hover-color: var(--ocean);
+    --active-color: var(--ocean);
+
+    --transition: 250ms ease-in-out;
+}
+
+body {
+    font: var(--body-font);
+    letter-spacing: var(--body-ls);
+    color: var(--slate);
+    background: var(--white);
+}
+
+ul,
+ol, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Headers */
+h1 {
+    font: var(--h1-font);
+    letter-spacing: var(--h1-ls);
+    color: var(--white);
+}
+
+h2 {
+    font: var(--h2-font);
+    letter-spacing: var(--h2-ls);
+}
+
+h3 {
+    font: var(--h3-font);
+    letter-spacing: var(--h3-ls);
+}
+.brand-logo {
+    font: var(--logo-font);
+    color: var(--iris);
+
+}
+
+.header {
+    border: 1px solid var(--cornflower);
+    .nav-menu {
+        color: var(--navy-blue);
+
+    }
+
+}
+
+.hero{
+    background: var(--navy-blue);
+    width: 100vw;
+    min-height: 600px;
+}
+
