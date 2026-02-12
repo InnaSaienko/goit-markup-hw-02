@@ -7,6 +7,7 @@
     --fs-sm: 12px; /* Small text */
     --fs-s: 16px; /* Body / Body Medium / Button Text */
     --fs-m: 20px; /* Header 3 */
+    --fs-m-l: 24px; /*Extra text size*/
     --fs-l: 36px; /* Header 2 */
     --fs-xl: 56px; /* Header 1 */
 
@@ -82,7 +83,7 @@
 }
 
 * {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     display: block;
 }
 
@@ -108,20 +109,26 @@ h1 {
     line-height: calc(var(--lh-xl) / var(--fs-xl));
     letter-spacing: var(--h1-ls);
     color: var(--white);
+    text-align: center;
 }
 
 h2 {
     font: var(--h2-font);
+    font-weight: 500;                           /*redundant*/
     font-size: var(--fs-l);
-    line-height: calc(var(--lh-l) / var(--fs-l));
+    line-height: calc(var(--lh-m) / var(--fs-m));
     letter-spacing: var(--h2-ls);
+    color: var(--navy-blue);
+    text-align: center;
+    text-transform: capitalize;
 }
 
 h3 {
     font: var(--h3-font);
     font-size: var(--fs-m);
-    line-height: calc(var(--lh-l) / var(--fs-m));
+    line-height: calc(var(--lh-m) / var(--fs-m));
     letter-spacing: var(--h3-ls);
+    color: var(--navy-blue);
 }
 
 .wrapper {
@@ -129,16 +136,23 @@ h3 {
 }
 
 .brand-logo {
-    font: var(--logo-font);
-    font-size: var(--fs-l);
-    line-height: calc(var(--lh-l) / var(--fs-l));
+    font-family: var(--logo-font), sans-serif;
+    font-weight: 700;                       /*redundant*/
+    font-size: 18px;
+    line-height: calc(var(--lh-xs) / var(--fs-xs));
+    letter-spacing: 0.03em;
     color: var(--iris);
+    text-transform: uppercase;
 
+    & span {
+        color: var(--grey);
+    }
 }
 
 .link {
     font: var(--link-font);
-    font-size: var(--fs-xs);
+    font-weight: 500;                                   /*redundant*/
+    font-size: var(--fs-s);
     line-height: calc(var(--lh-s) / var(--fs-xs));
     letter-spacing: var(--link-ls);
     color: var(--navy);
@@ -165,11 +179,12 @@ h3 {
     color: var(--white);
     font: var(--btn-font);
     font-size: var(--fs-s);
+    font-weight: 500;                               /*redundant*/
     line-height: calc(var(--lh-m) / var(--fs-s));
     letter-spacing: var(--btn-ls);
     cursor: pointer;
 
-    &:hover {
+    &:hover, &:focus {
         background: var(--hover-color);
     }
 }
@@ -189,6 +204,29 @@ h3 {
     min-height: 600px;
 }
 
+.feature {
+    .feature-text {
+        font: var(--small-font);
+        font-size: var(--fs-xs);
+        line-height: calc(var(--lh-s) / var(--fs-m-l));
+    }
+}
+
+.team {
+    background: var(--cloud);
+
+    .team-grid{
+        .team-card {
+            background-color: var(--white);
+            width: 264px;
+
+            .team-position {
+                line-height: calc(var(--lh-s) / var(--fs-m-l));
+            }
+        }
+    }
+}
+
 .portfolio {
     .portfolio-list {
         .portfolio-item {
@@ -197,6 +235,16 @@ h3 {
                 border: 1px solid var(--cornflower);
             }
         }
+    }
+
+}
+
+.footer {
+    background: var(--navy-blue);
+
+    .footer-description {
+        color: var(--cloud);
+        line-height: calc(var(--lh-s) / var(--fs-m-l));
     }
 
 }
