@@ -118,7 +118,7 @@ h2 {
     font: var(--h2-font);
     font-weight: 500; /*redundant*/
     font-size: var(--fs-l); /*redundant*/
-    line-height: calc(var(--lh-m) / var(--fs-m));
+    line-height: 1.11;
     letter-spacing: var(--h2-ls);
     color: var(--navy-blue);
     text-align: center;
@@ -192,7 +192,7 @@ h3 {
 }
 
 .header {
-    border: 1px solid var(--cornflower);
+    /*border: 1px solid var(--cornflower);*/
 
     .nav-menu {
         color: var(--navy-blue);
@@ -245,7 +245,7 @@ h3 {
         .portfolio-item {
             .portfolio-content {
                 width: 360px;
-                border: 1px solid var(--cornflower);
+                /*border: 1px solid var(--cornflower);*/
             }
         }
     }
@@ -261,6 +261,6 @@ h3 {
 
     .footer-description {
         color: var(--cloud);
-        line-height: calc(var(--lh-s) / var(--fs-m-l));
+        line-height: 1.5;
     }
 }
