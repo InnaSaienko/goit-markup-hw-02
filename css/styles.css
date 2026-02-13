@@ -174,7 +174,6 @@ h3 {
 
 .header {
     /*border: 1px solid var(--cornflower);*/
-
     .nav-menu {
         color: var(--navy-blue);
     }
@@ -201,7 +200,7 @@ address {
     .feature-text {
         font: var(--small-font);
         font-size: var(--fs-xs);
-        line-height: calc(var(--lh-s) / var(--fs-m-l));
+        line-height: 1.5;
     }
 }
 
@@ -214,7 +213,8 @@ address {
             width: 264px;
 
             .team-position {
-                line-height: calc(var(--lh-s) / var(--fs-m-l));
+                line-height:1.5;
+                background-color: var(--white);
             }
         }
     }
