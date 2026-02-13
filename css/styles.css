@@ -116,8 +116,6 @@ h2 {
     line-height: 1.11;
     letter-spacing: var(--ls-s);
     color: var(--navy-blue);
-    text-align: center;
-    text-transform: capitalize;
 }
 
 h3 {
@@ -172,8 +170,14 @@ h3 {
     background: var(--interactive-color);
 }
 
+.section-title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
 .header {
     /*border: 1px solid var(--cornflower);*/
+
     .nav-menu {
         color: var(--navy-blue);
     }
@@ -182,6 +186,13 @@ h3 {
 address {
     font-style: normal;
 
+}
+
+p {
+    font: var(--small-font);
+    font-size: var(--fs-s);
+    line-height: 1.5;
+    letter-spacing: var(--ls-s);
 }
 
 .contact-link {
@@ -197,10 +208,8 @@ address {
 }
 
 .feature {
-    .feature-text {
-        font: var(--small-font);
-        font-size: var(--fs-xs);
-        line-height: 1.5;
+    .team-card {
+        background-color: var(--white);
     }
 }
 
@@ -210,12 +219,7 @@ address {
     .team-grid {
         .team-card {
             background-color: var(--white);
-            width: 264px;
-
-            .team-position {
-                line-height:1.5;
-                background-color: var(--white);
-            }
+            /*width: 264px;*/
         }
     }
 }
@@ -227,11 +231,6 @@ address {
     }
 }
 
-.portfolio-category {
-    font-size: var(--fs-s);
-    line-height: 1.5;
-    letter-spacing: var(--ls-s);
-}
 
 .footer {
     background: var(--navy-blue);
