@@ -18,35 +18,31 @@
     --lh-l: 36px; /* Header 2 (assumed 1:1, you can adjust) */
     --lh-xl: 60px; /* Header 1 */
 
+    /*Letter spacing*/
+    --ls-s: 0.02em;
+    --ls-m: -0.04em;
+
     /* Body */
     --body-font: 400 'Roboto', 'Raleway', sans-serif;
-    --body-ls: 0.02em;
 
     /* Small text */
     --small-font: 400 'Roboto', sans-serif;
-    --small-ls: 0.04em;
 
     /* Body Medium */
     --body-medium-font: 500 'Roboto', sans-serif;
 
     /* Button Text */
     --btn-font: 500 'Roboto', sans-serif;
-    --btn-ls: 0.04em;
 
     /* Link Text */
     --link-font: 400 'Roboto', sans-serif;
-    --link-ls-s: 0.02em;
-    --link-ls-m: 0.04em;
 
     /* Headers */
     --h1-font: 700 'Roboto', sans-serif;
-    --h1-ls: 0.02em;
 
     --h2-font: 700 'Roboto', sans-serif;
-    --h2-ls: 0.02em;
 
     --h3-font: 500 'Roboto', sans-serif;
-    --h3-ls: 0.02em;
 
     /* Logo */
     --logo-font: 700 'Raleway', sans-serif;
@@ -93,7 +89,7 @@ body {
     font-family: "Roboto", sans-serif; /*redundant*/
     font-size: var(--fs-s); /*redundant*/
     line-height: calc(var(--lh-m) / var(--fs-s));
-    letter-spacing: var(--body-ls);
+    letter-spacing: var(--ls-s);
     color: var(--slate);
     background: var(--white);
 }
@@ -109,7 +105,7 @@ h1 {
     font: var(--h1-font);
     font-size: var(--fs-xl); /*redundant*/
     line-height: 1.07;
-    letter-spacing: var(--h1-ls);
+    letter-spacing: var(--ls-s);
     color: var(--white);
     text-align: center;
 }
@@ -119,7 +115,7 @@ h2 {
     font-weight: 500; /*redundant*/
     font-size: var(--fs-l); /*redundant*/
     line-height: 1.11;
-    letter-spacing: var(--h2-ls);
+    letter-spacing: var(--ls-s);
     color: var(--navy-blue);
     text-align: center;
     text-transform: capitalize;
@@ -128,9 +124,10 @@ h2 {
 h3 {
     font: var(--h3-font);
     font-size: var(--fs-m); /*redundant*/
-    line-height: calc(var(--lh-m) / var(--fs-m));
-    letter-spacing: var(--h3-ls);
-    color: var(--navy-blue);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: var(--ls-s);
+    color: var(--grey);
 }
 
 .wrapper {
@@ -156,7 +153,7 @@ h3 {
     font-weight: 500; /*redundant*/
     font-size: var(--fs-s);
     line-height: 1.5;
-    letter-spacing: var(--link-ls-s);
+    letter-spacing: var(--ls-s);
     color: var(--navy);
     transition: color var(--transition);
 }
@@ -183,7 +180,7 @@ h3 {
     font-size: var(--fs-s);
     font-weight: 500; /*redundant*/
     line-height: 1.5;
-    letter-spacing: var(--btn-ls);
+    letter-spacing: var(--ls-m);
     cursor: pointer;
 }
 
@@ -243,9 +240,10 @@ h3 {
 .portfolio {
     .portfolio-list {
         .portfolio-item {
-            .portfolio-content {
-                width: 360px;
-                /*border: 1px solid var(--cornflower);*/
+            .portfolio-category {
+                font-size: var(--fs-s);
+                line-height: 1.5;
+                letter-spacing: var(--ls-s);
             }
         }
     }
