@@ -75,7 +75,7 @@
     --interactive-color: #404BBF;
 
     --transition: 250ms ease-in-out;
-    --max-width: 1440px;
+    /*--max-width: 1440px;*/
 }
 
 * {
