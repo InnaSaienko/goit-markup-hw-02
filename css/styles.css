@@ -215,11 +215,11 @@ p {
 
 .team {
     background: var(--cloud);
+}
 
-    .team-card {
-        background-color: var(--white);
-        /*width: 264px;*/
-    }
+.team-card {
+    background-color: var(--white);
+    /*width: 264px;*/
 }
 
 .portfolio {
