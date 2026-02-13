@@ -135,7 +135,6 @@ h3 {
     letter-spacing: 0.03em;
     color: var(--iris);
     text-transform: uppercase;
-
 }
 
 .span-logo {
@@ -176,8 +175,6 @@ h3 {
 }
 
 .header {
-    /*border: 1px solid var(--cornflower);*/
-
     .nav-menu {
         color: var(--navy-blue);
     }
@@ -185,7 +182,6 @@ h3 {
 
 address {
     font-style: normal;
-
 }
 
 p {
@@ -219,25 +215,14 @@ p {
 
 .team-card {
     background-color: var(--white);
-    /*width: 264px;*/
 }
-
-.portfolio {
-    .portfolio-list {
-        .portfolio-item {
-        }
-    }
-}
-
 
 .footer {
     background: var(--navy-blue);
-
 }
 
 .footer-logo .span-logo {
     color: var(--cloud);
-
 }
 
 .footer-description {
