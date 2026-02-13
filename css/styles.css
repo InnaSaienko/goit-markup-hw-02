@@ -20,7 +20,7 @@
 
     /*Letter spacing*/
     --ls-s: 0.02em;
-    --ls-m: -0.04em;
+    --ls-m: 0.04em;
 
     /* Body */
     --body-font: 400 'Roboto', 'Raleway', sans-serif;
@@ -183,13 +183,14 @@ h3 {
 address {
     font-style: normal;
 
-    .contact-link {
-        color: var(--slate);
-    }
+}
 
-    .contact-link:hover, .contact-link:focus {
-        color: var(--ocean);
-    }
+.contact-link {
+    color: var(--slate);
+}
+
+.contact-link:hover, .contact-link:focus {
+    color: var(--ocean);
 }
 
 .hero {
