@@ -153,7 +153,7 @@ h3 {
 
 .link {
     font: var(--link-font);
-    font-weight: 500;                                           /*redundant*/
+    font-weight: 500; /*redundant*/
     font-size: var(--fs-s);
     line-height: 1.5;
     letter-spacing: var(--link-ls-s);
@@ -254,10 +254,11 @@ h3 {
 
 .footer {
     background: var(--navy-blue);
-}
 
-.footer-logo .span-logo {
-    color: var(--cloud);
+    .footer-logo .span-logo {
+        color: var(--cloud);
+
+    }
 
     .footer-description {
         color: var(--cloud);
