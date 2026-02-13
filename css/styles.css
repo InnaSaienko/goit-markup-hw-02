@@ -75,13 +75,9 @@
     --interactive-color: #404BBF;
 
     --transition: 250ms ease-in-out;
-    /*--max-width: 1440px;*/
 }
 
-* {
-    /*box-sizing: border-box;*/
-    /*display: block;*/
-}
+
 
 body {
     font: var(--body-font);
