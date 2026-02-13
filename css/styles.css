@@ -90,8 +90,8 @@
 
 body {
     font: var(--body-font);
-    font-family: "Roboto", sans-serif;                           /*redundant*/
-    font-size: var(--fs-s);                                     /*redundant*/
+    font-family: "Roboto", sans-serif; /*redundant*/
+    font-size: var(--fs-s); /*redundant*/
     line-height: calc(var(--lh-m) / var(--fs-s));
     letter-spacing: var(--body-ls);
     color: var(--slate);
@@ -107,8 +107,8 @@ ol, a, li {
 /* Headers */
 h1 {
     font: var(--h1-font);
-    font-size: var(--fs-xl);                                    /*redundant*/
-    line-height: calc(var(--fs-xl) / var(--lh-xl));
+    font-size: var(--fs-xl); /*redundant*/
+    line-height: 1.07;
     letter-spacing: var(--h1-ls);
     color: var(--white);
     text-align: center;
@@ -116,8 +116,8 @@ h1 {
 
 h2 {
     font: var(--h2-font);
-    font-weight: 500;                                           /*redundant*/
-    font-size: var(--fs-l);                                      /*redundant*/
+    font-weight: 500; /*redundant*/
+    font-size: var(--fs-l); /*redundant*/
     line-height: calc(var(--lh-m) / var(--fs-m));
     letter-spacing: var(--h2-ls);
     color: var(--navy-blue);
@@ -127,7 +127,7 @@ h2 {
 
 h3 {
     font: var(--h3-font);
-    font-size: var(--fs-m);                                         /*redundant*/
+    font-size: var(--fs-m); /*redundant*/
     line-height: calc(var(--lh-m) / var(--fs-m));
     letter-spacing: var(--h3-ls);
     color: var(--navy-blue);
@@ -138,9 +138,9 @@ h3 {
 }
 
 .brand-logo {
-    font-family: "Raleway", sans-serif;                                /*redundant*/
-    font-weight: 700;                                                 /*redundant*/
-    font-size: 18px;                                                   /*redundant*/
+    font-family: "Raleway", sans-serif; /*redundant*/
+    font-weight: 700; /*redundant*/
+    font-size: 18px; /*redundant*/
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--iris);
@@ -153,42 +153,43 @@ h3 {
 
 .link {
     font: var(--link-font);
-    font-weight: 500;                                   /*redundant*/
+    font-weight: 500; /*redundant*/
     font-size: var(--fs-s);
     line-height: calc(var(--lh-s) / var(--fs-m-l));
     letter-spacing: var(--link-ls-s);
     color: var(--navy);
     transition: color var(--transition);
-    }
-
-.link:hover, link:active, .link:focus {
-        color: var(--hover-color);
 }
 
-    /*&:active {*/
-    /*    color: var(--active-color);*/
+.link:hover, link:active, .link:focus {
+    color: var(--hover-color);
+}
 
-    /*    &::after {*/
-    /*        content: '';*/
-    /*        background: var(--active-color);*/
-    /*        !*height: 4px;*!*/
-    /*        !*width: 48px;*!*/
-    /*    }*/
-    /*}*/
+/*&:active {*/
+/*    color: var(--active-color);*/
+
+/*    &::after {*/
+/*        content: '';*/
+/*        background: var(--active-color);*/
+/*        !*height: 4px;*!*/
+/*        !*width: 48px;*!*/
+/*    }*/
+/*}*/
 
 .button {
     background: var(--iris);
     color: var(--white);
     font: var(--btn-font);
     font-size: var(--fs-s);
-    font-weight: 500;                               /*redundant*/
-    line-height: calc(var(--lh-s) / var(--fs-m-l));
+    font-weight: 500; /*redundant*/
+    line-height: 1.5;
     letter-spacing: var(--btn-ls);
     cursor: pointer;
 }
+
 .button:hover, .button:focus {
-        background: var(--hover-color);
-    }
+    background: var(--hover-color);
+}
 
 .header {
     border: 1px solid var(--cornflower);
@@ -196,11 +197,14 @@ h3 {
     .nav-menu {
         color: var(--navy-blue);
     }
+
     .contact {
         font-style: normal;
+
         .contact-link {
             color: var(--slate);
         }
+
         .contact-link:hover, .contact-link:focus {
             color: var(--ocean);
         }
@@ -209,8 +213,8 @@ h3 {
 
 .hero {
     background: var(--navy-blue);
-    /*width: 100vw;*/
-    /*min-height: 600px;*/
+
+
 }
 
 .feature {
@@ -224,7 +228,7 @@ h3 {
 .team {
     background: var(--cloud);
 
-    .team-grid{
+    .team-grid {
         .team-card {
             background-color: var(--white);
             width: 264px;
@@ -250,10 +254,13 @@ h3 {
 
 .footer {
     background: var(--navy-blue);
+}
+
+.footer-logo .span-logo {
+    color: var(--cloud);
 
     .footer-description {
         color: var(--cloud);
         line-height: calc(var(--lh-s) / var(--fs-m-l));
     }
-
 }
