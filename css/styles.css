@@ -216,11 +216,9 @@ p {
 .team {
     background: var(--cloud);
 
-    .team-grid {
-        .team-card {
-            background-color: var(--white);
-            /*width: 264px;*/
-        }
+    .team-card {
+        background-color: var(--white);
+        /*width: 264px;*/
     }
 }
 
