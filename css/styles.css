@@ -222,14 +222,14 @@ h3 {
 .portfolio {
     .portfolio-list {
         .portfolio-item {
-            .portfolio-category {
-                font-size: var(--fs-s);
-                line-height: 1.5;
-                letter-spacing: var(--ls-s);
-            }
         }
     }
+}
 
+.portfolio-category {
+    font-size: var(--fs-s);
+    line-height: 1.5;
+    letter-spacing: var(--ls-s);
 }
 
 .footer {
