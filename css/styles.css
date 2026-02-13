@@ -178,17 +178,17 @@ h3 {
     .nav-menu {
         color: var(--navy-blue);
     }
+}
 
-    address {
-        font-style: normal;
+address {
+    font-style: normal;
 
-        .contact-link {
-            color: var(--slate);
-        }
+    .contact-link {
+        color: var(--slate);
+    }
 
-        .contact-link:hover, .contact-link:focus {
-            color: var(--ocean);
-        }
+    .contact-link:hover, .contact-link:focus {
+        color: var(--ocean);
     }
 }
 
