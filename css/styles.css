@@ -72,8 +72,7 @@
 
     /* ===== STATES ===== */
 
-    --hover-color: var(--ocean);
-    --active-color: var(--ocean);
+    --interactive-color: #404BBF;
 
     --transition: 250ms ease-in-out;
     --max-width: 1440px;
@@ -130,10 +129,6 @@ h3 {
     color: var(--grey);
 }
 
-.wrapper {
-    max-width: var(--max-width);
-}
-
 .brand-logo {
     font-family: "Raleway", sans-serif; /*redundant*/
     font-weight: 700; /*redundant*/
@@ -143,9 +138,10 @@ h3 {
     color: var(--iris);
     text-transform: uppercase;
 
-    .span-logo {
-        color: var(--grey);
-    }
+}
+
+.span-logo {
+    color: var(--grey);
 }
 
 .link {
@@ -155,23 +151,11 @@ h3 {
     line-height: 1.5;
     letter-spacing: var(--ls-s);
     color: var(--navy);
-    transition: color var(--transition);
 }
 
 .link:hover, .link:active, .link:focus {
-    color: var(--hover-color);
+    color: var(--interactive-color);
 }
-
-/*&:active {*/
-/*    color: var(--active-color);*/
-
-/*    &::after {*/
-/*        content: '';*/
-/*        background: var(--active-color);*/
-/*        !*height: 4px;*!*/
-/*        !*width: 48px;*!*/
-/*    }*/
-/*}*/
 
 .button {
     background: var(--iris);
@@ -185,7 +169,7 @@ h3 {
 }
 
 .button:hover, .button:focus {
-    background: var(--hover-color);
+    background: var(--interactive-color);
 }
 
 .header {
@@ -195,7 +179,7 @@ h3 {
         color: var(--navy-blue);
     }
 
-    .contact {
+    address {
         font-style: normal;
 
         .contact-link {
@@ -210,8 +194,6 @@ h3 {
 
 .hero {
     background: var(--navy-blue);
-
-
 }
 
 .feature {
@@ -253,13 +235,14 @@ h3 {
 .footer {
     background: var(--navy-blue);
 
-    .footer-logo .span-logo {
-        color: var(--cloud);
+}
 
-    }
+.footer-logo .span-logo {
+    color: var(--cloud);
 
-    .footer-description {
-        color: var(--cloud);
-        line-height: 1.5;
-    }
+}
+
+.footer-description {
+    color: var(--cloud);
+    line-height: 1.5;
 }
