@@ -153,15 +153,15 @@ h3 {
 
 .link {
     font: var(--link-font);
-    font-weight: 500; /*redundant*/
+    font-weight: 500;                                           /*redundant*/
     font-size: var(--fs-s);
-    line-height: calc(var(--lh-s) / var(--fs-m-l));
+    line-height: 1.5;
     letter-spacing: var(--link-ls-s);
     color: var(--navy);
     transition: color var(--transition);
 }
 
-.link:hover, link:active, .link:focus {
+.link:hover, .link:active, .link:focus {
     color: var(--hover-color);
 }
 
